@@ -78,12 +78,12 @@ body {
             font-size: 1.7rem;
             line-height: 141%;
             color: $soft-blue;
-            white {
+            .username {
                 color: $white;
                 font-size: 1.7rem;
                 line-height: 141%;
             }
-            white:hover{
+            .username:hover{
                 color: $cyan;
                 cursor: pointer;
             }

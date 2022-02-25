@@ -75,12 +75,12 @@ body .card__span {
   line-height: 141%;
   color: #8bacda;
 }
-body .card__span white {
+body .card__span .username {
   color: #ffffff;
   font-size: 1.7rem;
   line-height: 141%;
 }
-body .card__span white:hover {
+body .card__span .username:hover {
   color: #00fff7;
   cursor: pointer;
 }
