@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  font-size: 10px;
+  font-family: outfit;
+  column: white;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0d192b;
+}
+body .card {
+  width: max-content;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  background-color: #14253d;
+}
+body .card__image {
+  width: 30rem;
+  height: 30rem;
+  border-radius: 1rem;
+  background-image: url("../../images/image-equilibrium.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+body .card .contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 255, 247, 0.7);
+  border-radius: 1rem;
+  opacity: 0;
+}
+body .card .contain .card__view {
+  display: block;
+}
+body .card .contain:hover {
+  opacity: 1;
+}
+body .card * {
+  color: #ffffff;
+}
+body .card__title {
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.8rem;
+  margin: 2.2rem 0rem 1.7rem 0rem;
+}
+body .card__title:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+body .card__desc {
+  width: 30rem;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  color: #8bacda;
+  margin: 0rem 0rem 2.3rem 0rem;
+}
+body .card__span {
+  font-size: 1.7rem;
+  line-height: 141%;
+  color: #8bacda;
+}
+body .card__span white {
+  color: #ffffff;
+  font-size: 1.7rem;
+  line-height: 141%;
+}
+body .card__span white:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+body .card__label {
+  font-size: 1.7rem;
+  line-height: 141%;
+}
+body .card__label, body .card__label :nth-child(0) {
+  color: #00fff7;
+  font-size: 1.7rem;
+  line-height: 141%;
+}
+body .card__icon {
+  margin: 0rem 0.6rem 0rem 0rem;
+}
+body .card__avatar {
+  width: 3.3rem;
+  height: 3.3rem;
+  border: white 1px solid;
+  border-radius: 50%;
+  margin-right: 1.6rem;
+}
+body .card hr {
+  height: 0.1rem;
+  border: 0px;
+  width: 100%;
+  background-color: #2f415b;
+  margin-top: 2.3rem;
+  margin-bottom: 1.6rem;
+}
+body .card .flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .card .row {
+  flex-direction: row;
+}
+body .card .space-between {
+  justify-content: space-between;
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */

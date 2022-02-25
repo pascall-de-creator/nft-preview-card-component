@@ -5,29 +5,50 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./dist/css/style.css">
   
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {
+      font-size: 11px; 
+      text-align: center; 
+      position: fixed;
+      top: 0px;
+      left:0px;
+      padding: 10px;
+      border-radius: 0px 0px 10px 10px;
+      background-color: rgb(10, 36, 27);
+    }
+    .attribution a { 
+      color: hsl(180, 100%, 50%); 
+    }
   </style>
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+  <div class="card" role="main">
+    <div class="card__image">
+      <div class="contain"><img src="./images/icon-view.svg" alt="eye" class="card__view"></div>
+    </div>
+    <h1 class="card__title">Equilibrium #3429</h1>
+    <p class="card__desc">Our Equilibrium collection promotes balance and calm.</p>
+    <div class="flex row space-between">
+      <div class="flex row">
+        <img src="./images/icon-ethereum.svg" id="nft" class="card__icon" alt="ethereum">
+        <label for="nft" class="card__label">0.041 ETH</label>
+      </div>
+      <div class="flex row">
+        <img src="./images/icon-clock.svg" id="clock" class="card__icon" alt="clock icon">
+        <span for="clock" class="card__span">3 days left</span>
+      </div>
+    </div>
+    <hr>
+    <div class="flex">
+      <img src="./images/image-avatar.png" class="card__avatar" alt="">
+    <span class="card__span">Creation of <white> Jules Wyvern</white></span>
+    </div>
+  <footer class="attribution">
+    Challenge by <a href="https://github.com/pascall-de-creator/nft-preview-card-component" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Pascall De Creator</a>.
+  </footer>
 </body>
 </html>

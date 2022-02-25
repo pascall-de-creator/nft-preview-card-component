@@ -1,0 +1,134 @@
+@import './config';
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    font-size: 10px;
+    font-family: outfit;
+    column: white;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $very-dark-blue-main-bg;
+
+    .card {
+        width: max-content;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        border-radius: 1.5rem;
+        padding: 2.5rem;
+        background-color: $very-dark-blue-card-bg;
+
+        &__image {
+            width: 30.0rem;
+            height: 30.0rem;
+            border-radius: 1.0rem;
+            background-image: url("../../images/image-equilibrium.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .contain {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: hsla(178, 100%, 50%,70%);
+            border-radius: 1.0rem;
+            opacity: 0;
+
+            .card__view {
+                display: block;
+            }
+        }
+        .contain:hover {
+            opacity: 1;
+        }
+        & * {
+            color: $white;
+        }
+        &__title {
+            font-weight: 600;
+            font-size: 2.2rem;
+            line-height: 2.8rem;
+            margin: 2.2rem 0rem 1.7rem 0rem;
+        }
+        &__title:hover {
+            color: $cyan;
+            cursor: pointer;
+        }
+        &__desc {
+            width: 30.0rem;
+            font-weight: $normal;
+            font-size: 1.8rem;
+            line-height: 2.5rem;
+            color: $soft-blue;
+            margin: 0rem 0rem 2.3rem 0rem;
+        }
+        &__span {
+            font-size: 1.7rem;
+            line-height: 141%;
+            color: $soft-blue;
+            white {
+                color: $white;
+                font-size: 1.7rem;
+                line-height: 141%;
+            }
+            white:hover{
+                color: $cyan;
+                cursor: pointer;
+            }
+        }
+        &__label{
+            font-size: 1.7rem;
+            line-height: 141%;
+        }
+        &__label, &__label :nth-child(0){
+            color: $cyan; 
+            font-size: 1.7rem;
+            line-height: 141%;
+        }
+        &__icon {
+            margin: 0rem 0.6rem 0rem 0rem;
+        }
+        &__avatar {
+            width: 3.3rem;
+            height: 3.3rem;
+            border: white 1px solid;
+            border-radius: 50%;
+            margin-right: 1.6rem;
+
+        }
+        hr {
+            height: 0.1rem;
+            border: 0px;
+
+            width: 100%;
+            background-color: $very-dark-blue-line;
+            margin-top: 2.3rem;
+            margin-bottom: 1.6rem;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .row {
+            flex-direction: row;
+        }
+        .space-between {
+            justify-content: space-between;
+            width: 100%;
+        }
+
+    }
+}
